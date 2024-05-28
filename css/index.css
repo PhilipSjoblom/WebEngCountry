@@ -106,18 +106,33 @@ body {
     width: var(--height);
     height: var(--height)
 }
-#place-description {
+
+#place-description-container {
     height: inherit;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#place-description {
     padding: 20px;
     position: relative;
-    padding-bottom: calc(20px + 50px + 20px);
     font-size: 0.9em;
+    flex-grow: 1;
+    overflow-y: auto;
 }
-#place-description > .explore-button {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+#place-description::-webkit-scrollbar {
+    width: 10px;
+}
+#place-description::-webkit-scrollbar-thumb {
+    background-color: #3c3c3c53;
+    border-radius: 10px;
+}
+
+#place-description-container > .explore-button {
+    margin: 20px;
+    width: calc(100% - 40px);
 }
 
 .panel-section {
