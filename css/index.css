@@ -2,8 +2,8 @@ body {
     --intro-bg-col-initial: #3a4220;
     --intro-bg-col: #768729;
 
-    --culture-bg-gradient: linear-gradient(130deg, #d46666, #680000);
-    --traditions-bg-gradient: linear-gradient(130deg, #6666d4, #310068);
+    --culture-bg-gradient: linear-gradient(130deg, #d7c7ba, #a37140);
+    --traditions-bg-gradient: linear-gradient(130deg, #756695, #312e40);
 }
 
 #intro {
@@ -13,6 +13,7 @@ body {
     background: var(--intro-bg-col);
     color: white;
     --banner-height: 80vh;
+    padding-bottom: 50px;
 }
 
 #intro-text {
@@ -20,7 +21,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
+    width: 75%;
     overflow-wrap: break-word;
     text-align: center;
     z-index: 2;
@@ -84,7 +85,7 @@ body {
 }
 
 #place-carousel {
-    --height: 300px;
+    --height: 350px;
     width: 70%;
     height: var(--height);
     background-color: #7a7a7a96;
@@ -106,11 +107,12 @@ body {
     height: var(--height)
 }
 #place-description {
-    width: calc(100% - var(--height));
     height: inherit;
     overflow: hidden;
     padding: 20px;
     position: relative;
+    padding-bottom: calc(20px + 50px + 20px);
+    font-size: 0.9em;
 }
 #place-description > .explore-button {
     position: absolute;
@@ -127,6 +129,8 @@ body {
 .panel-image {
     width: 30%;
     height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 .panel-image > div {
     width: 100%;
@@ -142,6 +146,10 @@ body {
     padding: 50px;
     padding-right: 15vw; /* Line up with 70% width text from above */
     position: relative;
+    font-size: 1.2em;
+}
+.panel-text-panel > h2 {
+    font-weight: 700;
 }
 .panel-text-panel > .explore-button {
     position: absolute;
@@ -173,14 +181,14 @@ body {
     background: var(--culture-bg-gradient);
 }
 #culture-image {
-    background: url("../assets/culture-image.jpeg");
+    background-image: url("../assets/culture-image.jpg");
 }
 
 #traditions-text {
     background: var(--traditions-bg-gradient);
 }
 #traditions-image {
-    background: url("../assets/culture-image.jpeg");
+    background-image: url("../assets/traditions-image.jpeg");
 }
 
 
@@ -188,7 +196,7 @@ body {
 @media only screen and (max-width: 600px) {
     #intro {
         --banner-height: 100vh;
-        font-size: 34px;
+        font-size: 24px;
     }
     #intro-text {
         width: 90%;

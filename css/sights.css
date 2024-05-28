@@ -1,11 +1,11 @@
 body {
-    background-color: #a1bad5;
+    background-color: #eaa057;
 }
 
 #banner {
     width: 100%;
     height: 150px;
-    background-color: #a1bad5;
+    background-color: #fddebf;
     background-image: url("../assets/sights-banner.jpg");
     background-size: cover;
 }
