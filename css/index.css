@@ -226,6 +226,7 @@ body {
     }
 
     #place-carousel {
+        --height: 100vw;
         display: block;
         width: var(--height);
     }
@@ -237,10 +238,10 @@ body {
         height: 100%;
         backdrop-filter: blur(8px) brightness(0.6);
     }
-    #place-description > .explore-button {
+    .explore-button {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        bottom: 20px !important;
+        left: 20px !important;
         width: calc(100% - 40px);
     }
 }
