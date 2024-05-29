@@ -1,92 +1,80 @@
 
 body
 {
-    
     background-image: url("../assets/culture_bg.jpg");    
     background-size: cover;
+}
+#content {
+    width: 100%;
+    height: 100%;
     backdrop-filter: blur(10px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-
-#hej
-{
-    background-color: white;
+#navbar {
     position: absolute;
-    height: 2000px;
-    width: 1600px;
-    left: 8%;
-    margin-top: 200px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    font-size: 25px;
-    padding: 20px;
-    border-radius: 10px;
-    border: rgb(121, 54, 23) solid 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
 }
 
-#culture
-{
+#page-title {
     font-size: 130px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
     font-weight: 700;
 }
 
-#cintro
-{
+#cintro-text {
     font-size: 30px;
     color: white;
-    position: absolute;
-    left: 550px; 
     width: 800px;
     height: 200px;
     text-align: center;
 }
 
-#food
-{
+#page-content {
+    background-color: white;
+    width: 85%;
+    height: fit-content;
+    padding: 15px;
+    border: rgb(121, 54, 23) solid 4px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#page-content > div:not(:last-child) {
+    border-bottom: rgb(152, 152, 152) solid 2px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+}
+.text-section {
     width: 60%;
+    height: 100%;
+    padding-right: 15px;
+}
+.image-section {
+    width: 40%;
+    height: 100%;
+    position: relative;
 }
 
-#burrito
-{
+.side-image {
+    width: 100%;
+    height: auto;
     position: absolute;
-    left: 1070px;
-    top: 100px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-#sports
-{
-    width: 60%;
-}
-
-#football
-{
-    position: absolute;
-    left: 1070px;
-    top: 760px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-#social
-{
-    width: 60%;
-}
-
-#family
-{
-    position: absolute;
-    left: 1070px;
-    top: 1350px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+    border-radius: 10000px;
 }
 
 .knappar
@@ -111,17 +99,14 @@ body
 {
     left: 15px;
 }
-
 #s
 {
     left: 130px;
 }
-
 #t
 {
     left: 245px;
 }
-
 .knappar:hover
 {
     background-color: rgb(151, 151, 151);
