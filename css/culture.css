@@ -77,3 +77,37 @@ body
     border-radius: 10000px;
 }
 
+.knappar
+{
+    height: 50px;
+    width: 100px;
+    float: left;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    font-weight: 900;
+    padding: 5px;
+    position: absolute;
+}
+
+#h
+{
+    left: 15px;
+}
+#s
+{
+    left: 130px;
+}
+#t
+{
+    left: 245px;
+}
+.knappar:hover
+{
+    background-color: rgb(151, 151, 151);
+}
