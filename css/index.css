@@ -251,6 +251,12 @@ body {
     #traditions-text {
         color: white;
     }
+    #culture-text {
+        color: white;
+    }
+    .panel-text-panel > .explore-button {
+        margin-left: 0;
+    }
 
     #place-carousel {
         --height: 100vw;
@@ -264,8 +270,8 @@ body {
         width: 100%;
         height: 100%;
     }
-    .panel-image {
-        filter: blur(8px) brightness(0.6);
+    .panel-text-panel {
+        backdrop-filter: blur(8px) brightness(0.6);
         
     }
     .explore-button {
