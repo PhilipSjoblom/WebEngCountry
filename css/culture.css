@@ -4,8 +4,7 @@ html, body {
 }
 
 body
-{
-    background-image: url("../assets/culture_bg.jpg");    
+{    
     background-size: contain;
 }
 #content {
